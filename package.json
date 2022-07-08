@@ -1,0 +1,32 @@
+{
+  "name": "checkbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ava",
+    "build": "tsc --build",
+    "start": "node ./dist/main.js"
+  },
+  "author": "Kraigo",
+  "license": "ISC",
+  "dependencies": {
+    "node-schedule": "^2.1.0",
+    "node-telegram-bot-api": "^0.56.0",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "@types/node-telegram-bot-api": "^0.56.0",
+    "ava": "^4.0.1",
+    "ts-node": "^10.5.0"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
